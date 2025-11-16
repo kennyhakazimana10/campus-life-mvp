@@ -1,0 +1,12 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.navbar a.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+section, main {
+  min-height: 70vh;
+}
