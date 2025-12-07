@@ -4,54 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events - Campus Life</title>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Campus Life</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Campus Life</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
         <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Events Content -->
-  <main class="container my-5">
-    <h2 class="mb-4">Upcoming Events</h2>
+<main class="container my-5">
+  <h2 class="fw-bold mb-4">Upcoming Events</h2>
 
-    <div id="events-list" class="row gy-3">
-      <div class="col-md-6">
-        <div class="card p-3 shadow-sm">
-          <h5>Campus Fair</h5>
-          <p>Date: Dec 07 | Location: Main Quad</p>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card p-3 shadow-sm">
-          <h5>Study Jam</h5>
-          <p>Date: Nov 25 | Location: Library</p>
-        </div>
+  <div id="events-list" class="row gy-4">
+    <div class="col-md-6">
+      <div class="card p-3 shadow-sm event-card">
+        <h5>Campus Fair</h5>
+        <p>Date: Dec 07 | Location: Main Quad</p>
       </div>
     </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="text-center p-3 bg-dark text-white">
-    <small>Campus Life Super App</small>
-  </footer>
+    <div class="col-md-6">
+      <div class="card p-3 shadow-sm event-card">
+        <h5>Study Jam</h5>
+        <p>Date: Nov 25 | Location: Library</p>
+      </div>
+    </div>
+  </div>
+</main>
 
-  <!-- Scripts -->
-  <script src="js/script.js"></script>
+<footer class="text-center p-3 bg-dark text-white">
+  <small>Campus Life Super App</small>
+</footer>
 
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
