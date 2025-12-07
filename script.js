@@ -1,22 +1,35 @@
 // Campus Life Super App - MVP
 console.log("Campus Life Super App loaded");
 
-// This script runs on every page, so we must check if elements exist first.
 document.addEventListener("DOMContentLoaded", () => {
 
-  // EVENTS PAGE CARD LOGIC
-  const eventsList = document.getElementById("events-list");
-
-  // Only run the event card logic if the events section exists
-  if (eventsList) {
-    const eventCards = eventsList.querySelectorAll(".card");
-
+  // Events page cards
+  const eventCards = document.querySelectorAll("#events-list .card");
+  if (eventCards.length > 0) {
     eventCards.forEach(card => {
+      card.style.cursor = "pointer";
       card.addEventListener("click", () => {
-        alert("More event details coming soon!");
+        alert("Event details will be added in the final version!");
       });
     });
   }
 
+  // Home page features (Feature 1, 2, 3)
+  const featureCards = document.querySelectorAll(".feature-card");
+  if (featureCards.length > 0) {
+    featureCards.forEach(card => {
+      card.style.cursor = "pointer";
+      card.addEventListener("click", () => {
+        alert("Feature coming soon!");
+      });
+    });
+  }
+
+  // Quote API placeholder (Home page)
+  const quoteText = document.getElementById("daily-quote");
+  if (quoteText) {
+    quoteText.textContent = "Fetching a motivational quote for the final project...";
+  }
 });
+
 
