@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Home page features (Feature 1, 2, 3)
+  // Home page feature cards
   const featureCards = document.querySelectorAll(".feature-card");
   if (featureCards.length > 0) {
     featureCards.forEach(card => {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Quote API placeholder (Home page)
+  // Quote placeholder
   const quoteText = document.getElementById("daily-quote");
   if (quoteText) {
     quoteText.textContent = "Fetching a motivational quote for the final project...";
